@@ -7,7 +7,7 @@
 		</div>	
 	</div>
 	<nav>
-		<ul>
+		<ul class="nav nav-pills nav-justified">
 			<li><a href="home.php">Home</a></li>
 			<li><a href="empresa.php">Empresa</a></li>
 			<li><a href="produtos.php">Produtos</a></li>
