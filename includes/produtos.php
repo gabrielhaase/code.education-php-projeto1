@@ -5,7 +5,7 @@
 	<img src="./library/images/products.jpg"/>
 </div>
 <div class="content">
-	<span class="title">Lorem ipsum dolor sit amet</span>
+	<span class="title">Lorem ipsum dolor sit amet&#160;&#160;&#160;-&#160;&#160;&#160;Produtos</span>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo leo, sit amet scelerisque nisi sodales ac. Suspendisse tristique egestas vehicula. Aliquam nec velit luctus est laoreet convallis eleifend nec elit. Maecenas non leo sed dui interdum laoreet a ultricies risus. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at urna non mi egestas vestibulum faucibus ac ante. Nunc hendrerit justo a justo facilisis, vel posuere erat volutpat. Pellentesque facilisis eget lorem a egestas.</p>
 	<ul>
 		<li>Lorem ipsum dolor sit amet;</li>

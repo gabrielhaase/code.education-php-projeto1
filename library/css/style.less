@@ -8,6 +8,13 @@ code.education - PHP - Projeto 1
 
 @color-lightgray: #d6d6d6;
 @color-gray: #3e464f;
+@color-blue: #428BCA;
+
+.clear-fix {
+	float: none;
+	clear: both;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -15,7 +22,6 @@ body {
 }
 
 header {
-	position: relative;
 	width: 100%;
 	height: 70px;
 	.background-bar {
@@ -107,11 +113,32 @@ section[rule="content"] {
 			font-size: 18px;
 			text-transform: uppercase;
 			font-weight: bold;
-			margin-bottom: 10px;
+			color: @color-blue;
 		}
 		ul {
 			margin: 0px;
 			padding: 0px 0px 0px 15px;
+		}
+	}
+	.contact-form {	
+		ul {
+			padding: 10px 0px 0px 0px;
+			margin: 0px;				
+			list-style: none;
+			li{
+				margin-bottom: 10px;
+				input[type='text'], input[type='email'] {
+					width: 400px;
+				}
+				textarea {
+					width: 400px;
+					resize: none;
+				}		
+				label {
+					width: 80px;	
+					vertical-align: top;
+				}
+			}
 		}
 	}
 }
@@ -126,5 +153,3 @@ footer {
 		color: @color-gray;
 	}
 }
-
-
