@@ -8,11 +8,11 @@
 	</div>
 	<nav>
 		<ul class="nav nav-pills nav-justified">
-			<li><a href="home.php">Home</a></li>
-			<li><a href="empresa.php">Empresa</a></li>
-			<li><a href="produtos.php">Produtos</a></li>
-			<li><a href="servicos.php">Serviços</a></li>
-			<li><a href="contato.php">Contato</a></li>
+			<li class="<?php if($selectedFile=="home.php"): ?>active<?php endif;?>"><a href="?filename=home.php">Home</a></li>
+			<li class="<?php if($selectedFile=="empresa.php"): ?>active<?php endif;?>"><a href="?filename=empresa.php">Empresa</a></li>
+			<li class="<?php if($selectedFile=="produtos.php"): ?>active<?php endif;?>"><a href="?filename=produtos.php">Produtos</a></li>
+			<li class="<?php if($selectedFile=="servicos.php"): ?>active<?php endif;?>"><a href="?filename=servicos.php">Serviços</a></li>
+			<li class="<?php if($selectedFile=="contato.php"): ?>active<?php endif;?>"><a href="?filename=contato.php">Contato</a></li>
 		</ul>
 	</nav>
 </header>

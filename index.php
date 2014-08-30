@@ -1,3 +1,5 @@
+<?php $selectedFile = $_GET['filename']; ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,5 +9,9 @@
 	</head>
 	<body>
 		<?php require_once('./includes/header.php'); ?>
+		<section rule='content'>
+			<?php require_once('./includes/'.$selectedFile); ?>
+		</section>
+		<?php require_once('./includes/footer.php'); ?>
 	</body>
 </html>
