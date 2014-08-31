@@ -1,4 +1,19 @@
-<?php $selectedFile = $_GET['filename']; ?>
+<?php
+$siteItems = ['home.php', 'empresa.php', 'produtos.php', 'servicos.php', 'contato.php'];
+
+if(!isset( $_GET['filename'] )){
+	$selectedFile = "home.php";
+} else {
+	foreach($siteItems AS $item){
+		if($item == $_GET['filename']) {
+			$selectedFile = $_GET['filename'];
+			break;
+		} else {
+			$selectedFile = 'not-found.php';
+		}
+	}	
+}
+?>
 
 <!DOCTYPE html>
 <html>

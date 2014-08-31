@@ -111,6 +111,19 @@ section[rule="content"] .content ul {
   margin: 0px;
   padding: 0px 0px 0px 15px;
 }
+section[rule="content"] .content-left {
+  width: 80%;
+  font-size: 12px;
+}
+section[rule="content"] .content-left .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #428bca;
+}
+section[rule="content"] .content-left .attention {
+  width: 200px;
+}
 section[rule="content"] .contact-form ul {
   padding: 10px 0px 0px 0px;
   margin: 0px;
