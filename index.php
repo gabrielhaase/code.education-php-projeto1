@@ -1,17 +1,25 @@
 <?php
-$siteItems = ['home.php', 'empresa.php', 'produtos.php', 'servicos.php', 'contato.php'];
+$route = parse_url($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+$path = preg_replace('/^\//', '', $route['path']);
 
-if(!isset( $_GET['filename'] )){
-	$selectedFile = "home.php";
+$siteItems = ['home', 'empresa', 'produtos', 'servicos', 'contato'];
+
+if(!isset( $path ) || empty( $path )){
+	$selectedPath = "home";
 } else {
+	$selectedPath = checkRoute($path, $siteItems);
+}
+
+function checkRoute($path, $siteItems) {	
 	foreach($siteItems AS $item){
-		if($item == $_GET['filename']) {
-			$selectedFile = $_GET['filename'];
+		if($item == $path) {
+			$selectedPath = $path;
 			break;
 		} else {
-			$selectedFile = 'not-found.php';
-		}
-	}	
+			$selectedPath = 'not-found';
+		}		
+	}
+	return $selectedPath;
 }
 ?>
 
@@ -25,7 +33,7 @@ if(!isset( $_GET['filename'] )){
 	<body>
 		<?php require_once('./includes/header.php'); ?>
 		<section rule='content'>
-			<?php require_once('./includes/'.$selectedFile); ?>
+			<?php require_once('./includes/'.$selectedPath.'.php'); ?>
 		</section>
 		<?php require_once('./includes/footer.php'); ?>
 	</body>
