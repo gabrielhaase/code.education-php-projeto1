@@ -1,4 +1,4 @@
-code.education - PHP - Projeto 1
+code.education - PHP - Projeto fase 3
 ================================
 Desenvolvimento de website simples utilizando PHP.
 
@@ -19,7 +19,9 @@ Pequeno site em PHP contendo os seguintes requisitos:
 -- Manutenção prática.<br/>
 -- Exibição de "Todos os direitos reservados - AN0" no rodapé.<br/>
 -- Tratamento dos parâmetros submetidos via GET.<br/>
--- Sem utilização de qualquer banco de dados, etc.
+-- Conteúdo dinâmico proveniente de base de dados.<br/>
+-- Sistema de busca.
+-- Database fixtures.
 
 -- Página de contato contendo um formulário com os campos:
 
