@@ -66,6 +66,11 @@ header {
 				font-weight: bold;
 			}
 		}
+		.search-box	{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
 	}
 	nav {
 		width: 100%;
@@ -154,6 +159,32 @@ section[rule="content"] {
 					vertical-align: top;
 				}
 			}
+		}
+	}
+}
+
+#search-items{
+	list-style: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+	li {
+		display: inline-block;
+		margin: 0px 0px 10px 0px;
+		.image {
+			width: 150px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.content {
+			width: 80%;
+		}
+		h4 {
+			margin: 0px;
+		}
+		p {
+			width: 100%;
 		}
 	}
 }

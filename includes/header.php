@@ -11,8 +11,9 @@ $navItems_result = $navItems_stmt->fetchAll(PDO::FETCH_ASSOC);
 		<div class="brand"><img src="library/images/marca.png" /></div>
 		<div class="project-description">
 			<div class="brand"><img src="library/images/logo-php-80x42.png" /></div>
-			<span class="description">Projeto Fase 3</span>
+			<span class="description">Projeto Fase 3</span>			
 		</div>	
+		<div class="search-box"><input type="text" id="search-field" maxlength="80" size="20" placeholder=" busca" /> <img src="./library/images/search.png" class="search-icon" /></div>
 	</div>
 	<nav>
 		<ul class="nav nav-pills nav-justified">
@@ -21,4 +22,20 @@ $navItems_result = $navItems_stmt->fetchAll(PDO::FETCH_ASSOC);
 			<?php endforeach;?>
 		</ul>
 	</nav>
+	<script>
+		$('.search-box .search-icon').click(function(){
+			var searchValue = $(".search-box #search-field").val();
+			if(searchValue!=="" && searchValue!==undefined){
+				document.location.href = '/resultado-busca?value='+searchValue;
+			}
+		});
+		$('.search-box input').keypress(function(e) {
+			if(e.which == 13) {
+				var searchValue = $(".search-box #search-field").val();
+				if(searchValue!=="" && searchValue!==undefined){
+					document.location.href = '/resultado-busca?value='+searchValue;
+				}
+			}
+		});		
+	</script>
 </header>
